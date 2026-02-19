@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Santhosh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h2 class="logo">Santhosh.</h2>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="talk-btn" onclick="scrollToContact()">Let's Talk</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Santhosh</span></h1>
+      <h2>Frontend Developer</h2>
+
+      <p>
+        Computer Science student passionate about building responsive
+        and user-friendly web applications.
+      </p>
+<p>
+  I am a passionate Frontend Developer and Computer Science Engineering student
+  focused on creating modern, responsive, and user-friendly web applications.
+  I enjoy turning ideas into real-world digital experiences using clean design
+  and efficient code.
+</p>
+
+
+      <div class="buttons">
+        <button class="hire" onclick="scrollToContact()">Hire Me</button>
+        <button class="projects" onclick="scrollToPortfolio()">See Projects</button>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="me.png" alt="Profile photo">
+    </div>
+  </section>
+
+  <!-- About -->
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+
+  <p>
+    I am Santhosh, a Computer Science Engineering student with strong interest
+    in frontend web development and modern web technologies. I enjoy building
+    responsive, accessible, and visually appealing websites using clean code
+    and best UI practices.
+  </p>
+
+  <h3>Skills</h3>
+  <ul>
+    <li>HTML5, CSS3, JavaScript (ES6+)</li>
+    <li>Responsive Web Design & UI/UX Basics</li>
+    <li>React (Learning)</li>
+    <li>Git & GitHub</li>
+  </ul>
+
+  <h3>Education</h3>
+  <p>
+    B.Tech in Computer Science Engineering – Currently in 2nd Year.
+  </p>
+
+  <h3>Career Goal</h3>
+  <p>
+    My goal is to become a skilled Full-Stack Developer and work on impactful
+    real-world applications that improve people's daily lives.
+  </p>
+</section>
+
+
+  <!-- Portfolio -->
+<section id="portfolio" class="section">
+  <h2>My Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>To-Do App</h3>
+      <p>Task manager with add, delete, and status tracking using JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p>Displays real-time weather data using OpenWeather API.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Quiz Application</h3>
+      <p>Interactive quiz with score tracking and multiple questions.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Form Builder UI</h3>
+      <p>Drag-and-drop style form builder interface with clean layout.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Crypto Price Tracker</h3>
+      <p>Shows live cryptocurrency prices using public API integration.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Blog -->
+ <section id="blog" class="section">
+  <h2>Blog</h2>
+
+  <div class="blog-post">
+    <h3>My Journey into Frontend Web Development</h3>
+
+    <p>
+      I started learning programming out of curiosity about how websites work.
+      This led me to frontend development where creativity meets logic to build
+      meaningful user experiences.
+    </p>
+
+    <h4>What I Learned</h4>
+    <ul>
+      <li>HTML for structure</li>
+      <li>CSS for styling and layout</li>
+      <li>JavaScript for interactivity</li>
+    </ul>
+
+    <h4>Future Goal</h4>
+    <p>
+      To become a professional developer and contribute to innovative web
+      applications used by thousands of users.
+    </p>
+  </div>
+
+  <br><br>
+
+  <div class="blog-post">
+    <h3>Top 5 Tips for Beginner Web Developers</h3>
+    <ul>
+      <li>Practice coding daily</li>
+      <li>Build real projects instead of only watching tutorials</li>
+      <li>Learn Git and version control early</li>
+      <li>Understand responsive design</li>
+      <li>Stay consistent and never give up</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+
+  <p>
+    Interested in working together or have a question?  
+    Feel free to send me a message. I will respond as soon as possible.
+  </p>
+
+  <form class="contact-form" onsubmit="sendMessage(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <br>
+
+  <p><strong>Email:</strong> santhosh@email.com</p>
+  <p><strong>Location:</strong> India</p>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
